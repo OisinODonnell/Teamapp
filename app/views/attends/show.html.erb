@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Player id:</b>
+  <%= @attend.player_ID %>
+</p>
+
+<p>
+  <b>Trainingevent id:</b>
+  <%= @attend.trainingEvent_ID %>
+</p>
+
+<p>
+  <b>Attendance:</b>
+  <%= @attend.attendance %>
+</p>
+
+<p>
+  <b>Excuse:</b>
+  <%= @attend.excuse %>
+</p>
+
+
+<%= link_to 'Edit', edit_attend_path(@attend) %> |
+<%= link_to 'Back', attends_path %>

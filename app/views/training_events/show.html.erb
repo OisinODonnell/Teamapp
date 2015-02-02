@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Location:</b>
+  <%= @training_event.location %>
+</p>
+
+<p>
+  <b>Type:</b>
+  <%= @training_event.type %>
+</p>
+
+<p>
+  <b>Date:</b>
+  <%= @training_event.date %>
+</p>
+
+<p>
+  <b>Duration:</b>
+  <%= @training_event.duration %>
+</p>
+
+
+<%= link_to 'Edit', edit_training_event_path(@training_event) %> |
+<%= link_to 'Back', training_events_path %>

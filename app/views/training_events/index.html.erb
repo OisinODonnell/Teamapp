@@ -1,0 +1,29 @@
+<h1>Listing training_events</h1>
+
+<table>
+  <tr>
+    <th>Location</th>
+    <th>Type</th>
+    <th>Date</th>
+    <th>Duration</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @training_events.each do |training_event| %>
+  <tr>
+    <td><%= training_event.location %></td>
+    <td><%= training_event.type %></td>
+    <td><%= training_event.date %></td>
+    <td><%= training_event.duration %></td>
+    <td><%= link_to 'Show', training_event %></td>
+    <td><%= link_to 'Edit', edit_training_event_path(training_event) %></td>
+    <td><%= link_to 'Destroy', training_event, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Training event', new_training_event_path %>
